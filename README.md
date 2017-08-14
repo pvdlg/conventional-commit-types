@@ -2,8 +2,8 @@
 
 List of conventional commit types extending [conventional-commit-types](https://github.com/commitizen/conventional-commit-types) with emojis and additionnal commit types (aliases).
 
-[![npm](https://img.shields.io/npm/v/conventional-commit-types.svg)](https://www.npmjs.com/package/conventional-commit-types)
-[![npm](https://img.shields.io/npm/dt/conventional-commit-types.svg)](https://www.npmjs.com/package/conventional-commit-types)
+[![npm](https://img.shields.io/npm/v/@metahub/conventional-commit-types.svg)](https://www.npmjs.com/package/@metahub/conventional-commit-types)
+[![npm](https://img.shields.io/npm/dt/@metahub/conventional-commit-types.svg)](https://www.npmjs.com/package/@metahub/conventional-commit-types)
 [![Greenkeeper badge](https://badges.greenkeeper.io/vanduynslagerp/conventional-commit-types.svg)](https://greenkeeper.io/)
 [![license](https://img.shields.io/github/license/vanduynslagerp/conventional-commit-types.svg)](https://github.com/vanduynslagerp/conventional-commit-types/blob/master/LICENSE)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
