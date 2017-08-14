@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - node
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+    - /^greenkeeper.*$/
+git:
+  depth: 3
+before_install:
+  - if [[ `npm -v` < 5* ]]; then npm install -g npm@5; fi
+  - npm install -g greenkeeper-lockfile@1
+before_script:
+  - npm prune
+  - greenkeeper-lockfile-update
+script:
+  - npm run test
+after_script:
+  - greenkeeper-lockfile-upload
+after_success:
+  - if [ -n "${CODECOV_TOKEN:-}" ]; then npm run codecov; fi
+  - npm run semantic-release-pre
+  - npm run semantic-release-post

@@ -1,0 +1,80 @@
+{
+  "name": "@metahub/conventional-commit-types",
+  "description": "List of conventional commit types with emojis. 🎉",
+  "version": "0.0.0-development",
+  "author": "Pierre Vanduynslager",
+  "bugs": {
+    "url": "https://github.com/vanduynslagerp/conventional-commit-types/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "emoji-regex": "^6.5.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^3.1.2",
+    "@commitlint/config-angular": "^3.1.1",
+    "@metahub/eslint-config": "^1.6.0",
+    "ava": "^0.21.0",
+    "babel-eslint": "^7.2.3",
+    "codecov": "^2.3.0",
+    "commitizen": "^2.9.6",
+    "eslint": "^4.4.1",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-ava": "^4.2.1",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-eslint-comments": "^1.0.3",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jasmine": "^2.8.4",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-sort-class-members": "^1.2.0",
+    "eslint-plugin-unicorn": "^2.1.2",
+    "husky": "^0.14.3",
+    "nyc": "^11.1.0",
+    "prettier": "^1.5.3",
+    "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.6",
+    "stringz": "^0.2.2"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/vanduynslagerp/conventional-commit-types#readme",
+  "keywords": [
+    "commitizen",
+    "conventional-commits",
+    "emoji"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "nyc": {
+    "include": [
+      "index.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanduynslagerp/conventional-commit-types.git"
+  },
+  "scripts": {
+    "clean": "rimraf coverage && rimraf .nyc_output",
+    "codecov": "codecov",
+    "commitmsg": "commitlint -e",
+    "cm": "git-cz",
+    "lint": "eslint index.js test package.json",
+    "precommit": "npm run lint",
+    "pretest": "npm run clean && npm run lint",
+    "semantic-release-post": "npm publish --access public && semantic-release post",
+    "semantic-release-pre": "semantic-release pre",
+    "test": "nyc --all ava -v && nyc report --reporter=lcov"
+  }
+}
