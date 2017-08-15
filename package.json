@@ -75,8 +75,7 @@
     "lint": "eslint index.js test package.json",
     "precommit": "npm run lint",
     "pretest": "npm run clean && npm run lint",
-    "semantic-release-post": "npm publish --access public && semantic-release post",
-    "semantic-release-pre": "semantic-release pre",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "nyc --all ava -v && nyc report --reporter=lcov"
   }
 }

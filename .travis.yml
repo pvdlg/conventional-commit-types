@@ -22,5 +22,4 @@ after_script:
   - greenkeeper-lockfile-upload
 after_success:
   - if [ -n "${CODECOV_TOKEN:-}" ]; then npm run codecov; fi
-  - npm run semantic-release-pre
-  - npm run semantic-release-post
+  - npm run semantic-release
