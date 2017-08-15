@@ -1,6 +1,6 @@
 # **conventional-commit-types**
 
-List of conventional commit types extending [conventional-commit-types](https://github.com/commitizen/conventional-commit-types) with emojis and additionnal commit types (aliases).
+List of conventional commit types, extending [conventional-commit-types](https://github.com/commitizen/conventional-commit-types), with emojis and additionnal commit types (aliases).
 
 [![npm](https://img.shields.io/npm/v/@metahub/conventional-commit-types.svg)](https://www.npmjs.com/package/@metahub/conventional-commit-types)
 [![npm](https://img.shields.io/npm/dt/@metahub/conventional-commit-types.svg)](https://www.npmjs.com/package/@metahub/conventional-commit-types)
