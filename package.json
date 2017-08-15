@@ -11,9 +11,6 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "emoji-regex": "^6.5.1"
-  },
   "devDependencies": {
     "@commitlint/cli": "^3.1.2",
     "@commitlint/config-angular": "^3.1.1",
@@ -22,6 +19,7 @@
     "babel-eslint": "^7.2.3",
     "codecov": "^2.3.0",
     "commitizen": "^2.9.6",
+    "emoji-regex": "^6.5.1",
     "eslint": "^4.4.1",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-ava": "^4.2.1",
