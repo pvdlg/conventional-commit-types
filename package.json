@@ -59,6 +59,9 @@
       "index.js"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/vanduynslagerp/conventional-commit-types.git"
