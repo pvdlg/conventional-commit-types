@@ -8,12 +8,13 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "@metahub/cz-conventional-commit"
     }
   },
   "devDependencies": {
     "@commitlint/cli": "^3.1.2",
     "@commitlint/config-angular": "^3.1.1",
+    "@metahub/cz-conventional-commit": "^1.0.2",
     "@metahub/eslint-config": "^1.6.0",
     "ava": "^0.22.0",
     "babel-eslint": "^7.2.3",
@@ -68,9 +69,9 @@
   },
   "scripts": {
     "clean": "rimraf coverage && rimraf .nyc_output",
+    "cm": "git-cz",
     "codecov": "codecov",
     "commitmsg": "commitlint -e",
-    "cm": "git-cz",
     "lint": "eslint index.js test package.json",
     "precommit": "npm run lint",
     "pretest": "npm run clean && npm run lint",
