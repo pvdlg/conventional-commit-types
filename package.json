@@ -1,6 +1,6 @@
 {
   "name": "@metahub/conventional-commit-types",
-  "description": "List of conventional commit types with emojis. 🎉",
+  "description": "[DEPRECATED] List of conventional commit types with emojis. 🎉",
   "version": "0.0.0-development",
   "author": "Pierre Vanduynslager",
   "bugs": {

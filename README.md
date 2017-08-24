@@ -1,3 +1,5 @@
+[DEPRECATED] - Use [conventional-changelog-metahub](https://github.com/vanduynslagerp/conventional-changelog-metahub) instead
+
 # **conventional-commit-types**
 
 List of conventional commit types, extending [conventional-commit-types](https://github.com/commitizen/conventional-commit-types), with emojis and additionnal commit types (aliases).
